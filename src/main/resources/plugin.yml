@@ -1,0 +1,39 @@
+name: GAxnbt
+version: 1.0.0
+main: com.eric.gaxnbt.GAxnbtPlugin
+api-version: '1.20'
+author: Eric_SXR
+description: 中文在线物品、生物、玩家与 Raw NBT 编辑器
+commands:
+  xnbt:
+    description: GAxnbt 在线编辑器
+    usage: /xnbt help
+    aliases: [gaxnbt]
+permissions:
+  xnbt.use:
+    default: false
+  xnbt.item:
+    default: false
+  xnbt.enchant:
+    default: false
+  xnbt.attribute:
+    default: false
+  xnbt.mob:
+    default: false
+  xnbt.player:
+    default: false
+  xnbt.nbt:
+    default: false
+  xnbt.undo:
+    default: false
+  xnbt.admin:
+    default: op
+    children:
+      xnbt.use: true
+      xnbt.item: true
+      xnbt.enchant: true
+      xnbt.attribute: true
+      xnbt.mob: true
+      xnbt.player: true
+      xnbt.nbt: true
+      xnbt.undo: true

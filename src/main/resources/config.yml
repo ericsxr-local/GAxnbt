@@ -1,0 +1,143 @@
+settings:
+  history-size: 20
+  max-target-distance: 20
+  messages-prefix: '&8[&6XNBT&8] &r'
+  compact-raw-max-keys: 10
+
+help:
+  main:
+    - '&6XNBT 帮助'
+    - ''
+    - '&e/xnbt item'
+    - '&7格式：/xnbt item'
+    - '&7作用：编辑手中物品'
+    - ''
+    - '&e/xnbt enchant'
+    - '&7格式：/xnbt enchant <附魔> <等级>'
+    - '&7例子：/xnbt enchant 锋利 100'
+    - ''
+    - '&e/xnbt attr'
+    - '&7格式：/xnbt attr <属性> <数值>'
+    - '&7例子：/xnbt attr 最大生命 50'
+    - ''
+    - '&e/xnbt mob'
+    - '&7格式：/xnbt mob <参数>'
+    - '&7例子：/xnbt mob maxhealth 1000'
+    - ''
+    - '&e/xnbt player'
+    - '&7格式：/xnbt player <玩家> <参数>'
+    - '&7例子：/xnbt player Steve health 100'
+    - ''
+    - '&e/xnbt item get'
+    - '&7格式：/xnbt item get [raw]'
+    - '&7例子：/xnbt item get'
+    - ''
+    - '&e/xnbt help'
+    - '&7格式：/xnbt help'
+    - '&7作用：查看本帮助'
+  enchant:
+    - '&6附魔编辑'
+    - '&7格式：/xnbt enchant <附魔> <等级>'
+    - '&7例子：/xnbt enchant 锋利 100'
+  attr:
+    - '&6物品属性编辑'
+    - '&7格式：/xnbt attr <属性> <数值> [操作] [部位]'
+    - '&7例子：/xnbt attr 最大生命 50'
+  mob:
+    - '&6生物编辑'
+    - '&7格式：/xnbt mob <参数>'
+    - '&7例子：/xnbt mob maxhealth 1000'
+  player:
+    - '&6玩家编辑'
+    - '&7格式：/xnbt player <玩家> <参数>'
+    - '&7例子：/xnbt player Steve health 100'
+
+messages:
+  no-permission: '&c你没有使用 XNBT 的权限。'
+  player-only: '&c这个命令只能由玩家执行。'
+  player-not-found: '&c找不到在线玩家：&f%player%'
+  no-item: '&c你的主手没有物品。'
+  invalid-number: '&c数值格式错误：&f%value%'
+  invalid-boolean: '&c请输入 true 或 false。'
+  invalid-enchant: '&c找不到这个附魔：&f%value%'
+  invalid-attribute: '&c找不到这个属性：&f%value%'
+  invalid-target: '&c没有找到目标实体，请把准星对准目标，或提供玩家名/UUID。'
+  invalid-slot: '&c未知装备部位：&f%value%'
+  changed: '&a修改成功。'
+  removed: '&a删除成功。'
+  set: '&a设置成功。'
+  nothing-to-undo: '&e没有可以撤销的操作。'
+  nothing-to-redo: '&e没有可以重做的操作。'
+  raw-error: '&cRaw NBT 操作失败：&f%error%'
+  unknown-command: '&c未知或不完整的命令。使用 &f/xnbt help &c查看格式。'
+  reload: '&a配置已重新加载。'
+
+# 中文名称可直接修改，不影响内部 Minecraft ID。
+enchants:
+  protection: 保护
+  fire_protection: 火焰保护
+  feather_falling: 摔落保护
+  blast_protection: 爆炸保护
+  projectile_protection: 弹射物保护
+  respiration: 水下呼吸
+  aqua_affinity: 水下速掘
+  thorns: 荆棘
+  depth_strider: 深海探索者
+  frost_walker: 冰霜行者
+  binding_curse: 绑定诅咒
+  soul_speed: 灵魂疾行
+  swift_sneak: 潜行速度
+  sharpness: 锋利
+  smite: 亡灵杀手
+  bane_of_arthropods: 节肢杀手
+  knockback: 击退
+  fire_aspect: 火焰附加
+  looting: 抢夺
+  sweeping: 横扫之刃
+  efficiency: 效率
+  silk_touch: 精准采集
+  unbreaking: 耐久
+  fortune: 时运
+  power: 力量
+  punch: 冲击
+  flame: 火矢
+  infinity: 无限
+  luck_of_the_sea: 海之眷顾
+  lure: 饵钓
+  loyalty: 忠诚
+  impaling: 穿刺
+  riptide: 激流
+  channeling: 引雷
+  multishot: 多重射击
+  quick_charge: 快速装填
+  piercing: 穿透
+  mending: 经验修补
+  vanishing_curse: 消失诅咒
+
+attributes:
+  GENERIC_MAX_HEALTH: 最大生命
+  GENERIC_FOLLOW_RANGE: 跟随范围
+  GENERIC_KNOCKBACK_RESISTANCE: 击退抗性
+  GENERIC_MOVEMENT_SPEED: 移动速度
+  GENERIC_FLYING_SPEED: 飞行速度
+  GENERIC_ATTACK_DAMAGE: 攻击伤害
+  GENERIC_ATTACK_KNOCKBACK: 攻击击退
+  GENERIC_ATTACK_SPEED: 攻击速度
+  GENERIC_ARMOR: 护甲
+  GENERIC_ARMOR_TOUGHNESS: 护甲韧性
+  GENERIC_LUCK: 幸运
+  HORSE_JUMP_STRENGTH: 马跳跃强度
+  ZOMBIE_SPAWN_REINFORCEMENTS: 僵尸增援几率
+
+attribute-operations:
+  ADD_NUMBER: 加法
+  ADD_SCALAR: 基础乘法
+  MULTIPLY_SCALAR_1: 总乘法
+
+slots:
+  HAND: 主手
+  OFF_HAND: 副手
+  HEAD: 头盔
+  CHEST: 胸甲
+  LEGS: 护腿
+  FEET: 鞋子
